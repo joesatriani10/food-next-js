@@ -14,7 +14,7 @@ export default function CommunityPage() {
                 </h1>
                 <p>
                     Welcome to our vibrant community of food lovers and culinary enthusiasts! Here, we celebrate the
-                    universal language of food and the joy it brings to our lives. Whether you're a seasoned chef or a
+                    universal language of food and the joy it brings to our lives. Whether you&apos;re a seasoned chef or a
                     home cook, we invite you to share your favorite recipes and join us in our gastronomic journey.
                 </p>
             </header>
