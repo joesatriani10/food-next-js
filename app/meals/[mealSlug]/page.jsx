@@ -10,14 +10,17 @@ const MealPost = ({params}) => {
         notFound();
     }
     if (meal && meal.instructions) {
-        console.log('HERE: '+meal.instructions);
         meal.instructions = meal.instructions.replace(/\n/g, '<br/>');
     }
     return (
         <>
             <header className={classes.header}>
                 <div className={classes.image}>
-                    <Image src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${meal.image}`} fill alt={""}/>
+                    <Image
+                        src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${meal.image}`}
+                        alt={meal.title}
+                        fill
+                    />
                 </div>
                 <div className={classes.headerText}>
                     <h1>{meal.title}</h1>
