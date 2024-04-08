@@ -13,9 +13,16 @@ export default function ShareMealPage() {
         <>
             <header className={classes.header}>
                 <h1>
-                    Share your <span className={classes.highlight}>favorite meal</span>
+                    Share Your <span className={classes.highlight}>Culinary Masterpiece</span> with the World
                 </h1>
-                <p>Or any other meal you feel needs sharing!</p>
+                <p>
+                    Have you ever created a dish so delicious, so unforgettable that you felt it deserved more than just
+                    the applause of your dinner guests? Perhaps you&apos;ve stumbled upon a family recipe that&apos;s been passed
+                    down for generations and you think it&apos;s high time it had a wider audience. Or maybe you&apos;ve just
+                    whipped up a weeknight dinner that turned out to be a surprising hit. Whatever your story, whatever
+                    your dish, we want to hear about it. Don&apos;t keep that culinary brilliance to yourself - share it with
+                    our community and let us all enjoy your cooking prowess!
+                </p>
             </header>
             <main className={classes.main}>
                 <form className={classes.form} action={formAction}>

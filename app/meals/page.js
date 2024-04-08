@@ -13,11 +13,11 @@ const MealsPage = () => {
         <>
             <header className={classes.header}>
 
-                <h1>Delicious meals. created{' '}
-                    <span className={classes.highlight}>by you</span>
+                <h1>Savour the Joy of Cooking with{' '}
+                    <span className={classes.highlight}>Your Own Creations</span>
                 </h1>
                 <p>
-                    Choose your favorite recipe and cook it yourself. It is easy and fun!
+                    Unleash your inner chef and dive into the delightful process of cooking. Select your preferred recipe from our diverse collection and embark on a culinary adventure right in your own kitchen.
                 </p>
                 <p className={classes.cta}>
                     <Link href={"/meals/share"}>Share Your Favorite Recipe</Link>
