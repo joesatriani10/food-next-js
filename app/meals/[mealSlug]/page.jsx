@@ -17,7 +17,7 @@ const MealPost = ({params}) => {
         <>
             <header className={classes.header}>
                 <div className={classes.image}>
-                    <Image src={meal.image} fill alt={""}/>
+                    <Image src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${meal.image}`} fill alt={""}/>
                 </div>
                 <div className={classes.headerText}>
                     <h1>{meal.title}</h1>
