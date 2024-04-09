@@ -3,8 +3,8 @@ import Image from "next/image";
 import {getMeal} from "@/lib/meals"
 import {notFound} from "next/navigation";
 
-const MealPost = ({params}) => {
-    const meal = getMeal(params.mealSlug);
+const MealPost = async ({params}) => {
+    const meal = await getMeal(params.mealSlug);
 
     if (!meal) {
         notFound();
