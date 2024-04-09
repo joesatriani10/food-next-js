@@ -3,12 +3,16 @@ import Image from 'next/image';
 
 import classes from './meal-item.module.css';
 
-export default function MealItem({ title, slug, image, summary, creator }) {
+export default function MealItem({title, slug, image, summary, creator}) {
     return (
         <article className={classes.meal}>
             <header>
                 <div className={classes.image}>
-                    <Image src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${image}`} alt={title} layout={"fill"} objectFit={"cover"} />
+                    <Image src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${image}`}
+                           alt={title}
+                           layout={"fill"}
+                           objectFit={"cover"}
+                           sizes="(max-width: 430px) 100vw, 240px"/>
                 </div>
                 <div className={classes.headerText}>
                     <h2>{title}</h2>

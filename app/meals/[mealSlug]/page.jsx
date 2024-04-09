@@ -19,6 +19,7 @@ const MealPost = async ({params}) => {
                     <Image
                         src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${meal.image}`}
                         alt={meal.title}
+                        sizes="(max-width: 480px) 100vw, 320px"
                         fill
                     />
                 </div>
