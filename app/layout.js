@@ -2,8 +2,8 @@ import './globals.css';
 import MainHeader from "@/components/main-header/main-header";
 
 export const metadata = {
-    title: 'NextLevel Food',
-    description: 'Delicious meals, shared by a food-loving community.',
+    title: 'NextLevel Food Demo | Angel Montes de Oca',
+    description: 'A demo of a food sharing platform built with Next.js and AWS RDS.',
 };
 
 export default function RootLayout({children}) {
