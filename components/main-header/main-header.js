@@ -1,9 +1,8 @@
 import Link from "next/link";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/public/assets/logo.png";
 import classes from "./main-header.module.css";
 import Image from "next/image";
 import MainHeaderBackground from "@/components/main-header/main-header-background";
-import {usePathname} from "next/navigation";
 import NavLink from "@/components/main-header/nav-link";
 
 const MainHeader = () => {

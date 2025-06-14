@@ -8,7 +8,7 @@ export default function MealItem({title, slug, image, summary, creator}) {
         <article className={classes.meal}>
             <header>
                 <div className={classes.image}>
-                    <Image src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${image}`}
+                    <Image src={`/assets/${image}`}
                            alt={title}
                            layout={"fill"}
                            objectFit={"cover"}

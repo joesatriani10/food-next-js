@@ -30,7 +30,7 @@ const MealPost = async ({params}) => {
             <header className={classes.header}>
                 <div className={classes.image}>
                     <Image
-                        src={`https://angelnextjsdemo.s3.us-west-1.amazonaws.com/${meal.image}`}
+                        src={`/assets/${meal.image}`}
                         alt={meal.title}
                         sizes="(max-width: 480px) 100vw, 320px"
                         fill
