@@ -3,8 +3,9 @@ import Image from "next/image";
 import {getMeal} from "@/lib/meals"
 import {notFound} from "next/navigation";
 
-export async function generateMetadata({params}) {
-    const meal = await getMeal(params.mealSlug);
+export async function generateMetadata({ params }) {
+    const { mealSlug } = await params;
+    const meal = await getMeal(mealSlug);
 
     if (!meal) {
         notFound();
@@ -15,9 +16,9 @@ export async function generateMetadata({params}) {
         description: meal.summary,
     }
 }
-
-const MealPost = async ({params}) => {
-    const meal = await getMeal(params.mealSlug);
+const MealPost = async ({ params }) => {
+    const { mealSlug } = await params;
+    const meal = await getMeal(mealSlug);
 
     if (!meal) {
         notFound();

@@ -10,8 +10,7 @@ export default function MealItem({title, slug, image, summary, creator}) {
                 <div className={classes.image}>
                     <Image src={`/assets/${image}`}
                            alt={title}
-                           layout={"fill"}
-                           objectFit={"cover"}
+                           fill
                            sizes="(max-width: 430px) 100vw, 240px"/>
                 </div>
                 <div className={classes.headerText}>
