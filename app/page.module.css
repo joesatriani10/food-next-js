@@ -166,10 +166,23 @@
 @media (max-width: 768px) {
     .header {
         padding: 2rem;
+        text-align: center;
     }
 
     .hero h1 {
         font-size: 2.2rem;
+    }
+
+    .copy {
+        align-items: center;
+    }
+
+    .hero p {
+        margin: 0 auto;
+    }
+
+    .cta {
+        justify-content: center;
     }
 
     .slideshow {

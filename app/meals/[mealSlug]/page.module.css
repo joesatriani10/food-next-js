@@ -86,6 +86,35 @@
     animation: fade-slide-in-from-bottom 1s ease-out forwards;
 }
 
+@media (max-width: 720px) {
+    .header {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .image {
+        width: 100%;
+        height: 14rem;
+    }
+
+    .headerText {
+        padding: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .headerText h1 {
+        font-size: 2.3rem;
+    }
+
+    .creator {
+        font-size: 1.2rem;
+    }
+
+    .instructions {
+        margin: 2rem 1rem;
+    }
+}
+
 .loading {
     font-size: 3rem;
     text-align: center;

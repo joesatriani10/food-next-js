@@ -23,6 +23,24 @@
     }
 }
 
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.25rem;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.4rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+}
+
 .nav ul {
     list-style: none;
     margin: 0;
