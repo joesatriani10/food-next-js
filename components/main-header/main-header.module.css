@@ -1,13 +1,25 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
+    gap: 1.5rem;
+    margin: 1.5rem auto 0 auto;
+    width: 92%;
+    max-width: 75rem;
+    padding: 1.35rem 1.5rem;
+    border-radius: 16px;
+    background: rgba(10, 12, 18, 0.85);
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(14px);
 }
 
 @media (min-width: 768px) {
     .header {
-        padding: 2rem 10%;
+        padding: 1.35rem 1.75rem;
     }
 }
 
@@ -16,29 +28,26 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1.5rem;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-size: 1.25rem;
+    gap: 1rem;
+    font-size: 1rem;
+    align-items: center;
 }
-
 
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     text-decoration: none;
-    color: #ddd6cb;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.15rem;
+    color: var(--text);
+    font-weight: 800;
+    letter-spacing: 0.08rem;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .logo img {
-    width: 5rem;
-    height: 5rem;
+    width: 3.4rem;
+    height: 3.4rem;
     object-fit: contain;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 0.8rem rgba(255, 128, 82, 0.35));
 }

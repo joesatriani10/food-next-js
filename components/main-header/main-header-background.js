@@ -8,11 +8,11 @@ const MainHeaderBackground = () =>{
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop
                             offset="0%"
-                            style={{stopColor: '#59453c', stopOpacity: '1'}}
+                            style={{stopColor: '#131a26', stopOpacity: '1'}}
                         />
                         <stop
                             offset="100%"
-                            style={{stopColor: '#8f3a09', stopOpacity: '1'}}
+                            style={{stopColor: '#1f2d3c', stopOpacity: '1'}}
                         />
                     </linearGradient>
                 </defs>

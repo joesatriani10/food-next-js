@@ -6,44 +6,43 @@ export default function Home() {
     return (
         <>
             <header className={classes.header}>
-                <div className={classes.slideshow}>
-                    <ImageSlideshow/>
-                </div>
-                <div>
+                <div className={classes.copy}>
+                    <p className={classes.eyebrow}>Portfolio demo • Next.js app router</p>
                     <div className={classes.hero}>
-                        <h1>NestLevel Food for NextLevel Foodies</h1>
-                        <p>Taste & share food from all over the world.</p>
+                        <h1>NextLevel Food for adventurous home cooks</h1>
+                        <p>Taste, share, and celebrate the dishes that make your table feel like home.</p>
                     </div>
                     <div className={classes.cta}>
-                        <Link href={"/community"}>Join the Community</Link>
-                        <Link href={"/meals"}>Explore Meals</Link>
+                        <Link className={classes.primary} href={"/meals"}>Explore Meals</Link>
+                        <Link className={classes.secondary} href={"/community"}>Join the Community</Link>
                     </div>
+                    <p className={classes.hint}>This is a showcase—data is curated, submissions stay safely disabled.</p>
+                </div>
+                <div className={classes.slideshow}>
+                    <ImageSlideshow/>
                 </div>
             </header>
             <main>
                 <section className={classes.section}>
                     <h2>How it works</h2>
                     <p>
-                        NextLevel Food is a platform for foodies to share their favorite
-                        recipes with the world. It&apos;s a place to discover new dishes, and to
-                        connect with other food lovers.
+                        Browse hand-picked recipes from food lovers around the globe, skim the highlights, and dive
+                        into detailed steps when you are ready to cook.
                     </p>
                     <p>
-                        NextLevel Food is a place to discover new dishes, and to connect
-                        with other food lovers.
+                        Every screen is built with intentional motion, warm gradients, and glassy surfaces so the demo
+                        looks like a crafted product—not a classroom exercise.
                     </p>
                 </section>
 
                 <section className={classes.section}>
                     <h2>Why NextLevel Food?</h2>
                     <p>
-                        NextLevel Food is a platform for foodies to share their favorite
-                        recipes with the world. It&apos;s a place to discover new dishes, and to
-                        connect with other food lovers.
+                        Opinionated design, swift navigation, and present-but-disabled actions make this portfolio
+                        project feel premium while keeping data static.
                     </p>
                     <p>
-                        NextLevel Food is a place to discover new dishes, and to connect
-                        with other food lovers.
+                        Explore the experience, get inspired, and imagine your own recipes taking center stage here.
                     </p>
                 </section>
             </main>

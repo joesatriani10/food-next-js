@@ -2,9 +2,11 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background: radial-gradient(circle at 30% 20%, rgba(243, 209, 99, 0.15), transparent 50%), #0f1117;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .slideshow img {
@@ -15,12 +17,26 @@
     top: 0;
     left: 0;
     opacity: 0;
-    transform: scale(1.1) translateX(-1rem) rotate(-5deg);
-    transition: all 0.5s ease-in-out;
+    transform: scale(1.08) translateX(-1rem) rotate(-4deg);
+    transition: all 0.7s ease-in-out;
+    filter: saturate(1.05) contrast(1.02);
 }
 
 .slideshow .active {
     z-index: 1;
     opacity: 1;
     transform: scale(1) translateX(0) rotate(0);
+    animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.02) translateY(-6px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
 }
